@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+YOUR_IMDB_ID = "IMDB_ID"
+
 def get_imdb_data(url):
     total_runtime_minutes = 0
     total_movies = 0
@@ -79,7 +81,7 @@ def convert_minutes_to_dd_hh_mm_ss(minutes):
     return days, hours, minutes, seconds
 
 # IMDb ratings page URL
-url = "https://www.imdb.com/user/{{YOUR_IMDB_ID}}/checkins"
+url = f"https://www.imdb.com/user/{YOUR_IMDB_ID}/checkins"
 
 # Get the total sum of runtimes and number of movies listed on all pages of IMDb ratings
 total_runtime, total_movies, total_series = get_imdb_data(url)
