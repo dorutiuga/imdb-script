@@ -24,6 +24,6 @@ This Python script scrapes IMDb user ratings page to calculate the total runtime
 3.2. Run the script by executing the following command in your terminal:
 
    ```bash
-   python runtime.py
+   python3 runtime.py
    ```
 <img width="666" alt="Screenshot 2024-03-24 at 09 43 02" src="https://github.com/dorutiuga/imdb-script/assets/107680344/60632677-0260-40d6-9ac2-15b9603826ae">
